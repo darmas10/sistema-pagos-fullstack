@@ -1,0 +1,94 @@
+
+/* Navbar */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+  background:#121217;
+  color:#fff;
+}
+.logo{ font-weight:700; font-size:1.15rem; }
+.nav-links{ list-style:none; display:flex; gap:18px; margin:0; padding:0; }
+.nav-links a{ color:#fff; text-decoration:none; font-size:.95rem; transition:.15s; }
+.nav-links a:hover, .nav-links .active{ color:#64b5ff; }
+
+/* Page Layout */
+.page{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:calc(100vh - 140px);
+  padding:32px 16px;
+  background:linear-gradient(180deg,#f3f7fb 0%, #eef3f9 100%);
+}
+
+/* Card */
+.login-card{
+  width:420px;
+  border-radius:14px;
+  box-shadow:0 8px 30px rgba(2,6,23,0.12);
+  padding:0;
+}
+.card-header{
+  padding:22px 24px;
+  text-align:center;
+}
+.card-header h2{
+  margin:0;
+  font-size:1.45rem;
+}
+.subtitle{
+  color:#666;
+  margin-top:6px;
+  font-size:.95rem;
+}
+
+/* Form Content */
+mat-card-content{
+  padding:18px 24px 26px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+.full{ width:100%; }
+.btn{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  font-weight:600;
+  margin-top:10px;
+}
+
+/* Bottom link */
+.small{
+  margin-top:6px;
+  color:#555;
+  text-align:center;
+}
+.small a{
+  color:#0077ff;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* Footer inside card */
+.card-footer{
+  padding:12px 24px;
+  text-align:center;
+  color:#666;
+}
+
+/* Global footer */
+.global-footer{
+  text-align:center;
+  padding:14px 0;
+  color:#fff;
+  background:#121217;
+}
+
+/* Responsive */
+@media (max-width:480px){
+  .login-card{ width:94%; }
+  .nav-links{ display:none; }
+}

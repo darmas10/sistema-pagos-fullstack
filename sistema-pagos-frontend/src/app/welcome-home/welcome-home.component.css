@@ -1,0 +1,117 @@
+/* ----------- NAVBAR ----------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 15px 40px;
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4ea3ff;
+}
+
+/* ----------- HERO ----------- */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #005bea, #00c6fb);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+/* Buttons */
+.hero-buttons button {
+  background: #ffffff;
+  color: #005bea;
+  padding: 12px 25px;
+  font-size: 17px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.hero-buttons .btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.hero-buttons button:hover {
+  transform: translateY(-3px);
+}
+
+/* ----------- CARDS SECTION ----------- */
+.cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ----------- FOOTER ----------- */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #1e1e1e;
+  color: white;
+  margin-top: 40px;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .nav-links {
+    display: none; /* se puede mejorar luego con menú hamburguesa */
+  }
+}

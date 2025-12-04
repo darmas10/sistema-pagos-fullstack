@@ -1,0 +1,59 @@
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">SistemaPagos</div>
+
+  <ul class="nav-links">
+    <li><a routerLink="/">Inicio</a></li>
+    <li><a routerLink="/login" class="active">Login</a></li>
+    <li><a routerLink="/register">Registro</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- LOGIN PAGE -->
+<div class="page">
+
+  <mat-card class="login-card" [formGroup]="loginForm">
+
+    <div class="card-header">
+      <h2>Iniciar Sesión</h2>
+      <p class="subtitle">Accede a tu cuenta de manera segura</p>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <mat-card-content>
+
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Username o Email</mat-label>
+        <input matInput formControlName="username">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" formControlName="password">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" class="btn" (click)="login()">
+        Iniciar Sesión
+      </button>
+
+      <p class="small">
+        ¿No tienes cuenta?
+        <a routerLink="/register">Crea una aquí</a>
+      </p>
+
+    </mat-card-content>
+
+    <div class="card-footer">
+      Sistema de Pagos — © {{ currentYear }}
+    </div>
+
+  </mat-card>
+
+</div>
+
+<!-- FOOTER GLOBAL -->
+<footer class="global-footer">
+  SistemaPagos © {{ currentYear }}
+</footer>

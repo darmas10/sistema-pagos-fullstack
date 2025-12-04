@@ -1,0 +1,135 @@
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 15px 40px;
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #4ea3ff;
+}
+
+/* PAGE CONTAINER */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef1f6;
+  padding: 50px 15px;
+  min-height: calc(100vh - 160px);
+}
+
+/* CARD */
+.register-card {
+  width: 430px;
+  padding: 40px 35px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  background: white;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* LINK */
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #005bea;
+  font-weight: bold;
+}
+
+/* ALERTS */
+.alert {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.success {
+  background: #d4f9d4;
+  color: #146d14;
+}
+
+.error {
+  background: #ffd4d4;
+  color: #a30000;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #1e1e1e;
+  color: white;
+  padding: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 550px) {
+  .register-card {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+}
