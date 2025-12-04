@@ -81,6 +81,11 @@ public class PagoController {
         return pagoService.actualizarPagoPorStatus(status, pagoId);
     }
 
+<<<<<<< HEAD
+=======
+    //multipart para que el comntroladort acepte el formato pdf 
+
+>>>>>>> 5ab96a8752c34323fa67537e4e3792d87a35ac31
     @PostMapping(path = "/pagos",consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Pago guardarPago(@RequestParam("file") MultipartFile file, double cantidad, TypePago type, LocalDate date, String codigoEstudiante) throws IOException{
         return pagoService.savePago(file, cantidad, type, date, codigoEstudiante);
